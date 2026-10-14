@@ -1,28 +1,115 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NavBar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <nav>
-        <a href="#">Главная</a>
-        <div class="dropdown">
-            <button>Услуги</button>
-            <div class="dropdown-content">
-                <a href="#">Фронтенд</a>
-                <a href="#">Бэкенд</a>
-                <a href="#">Фул-стек</a>
+
+    <div class="topbar">
+        <div class="logo">MySite</div>
+
+        <div class="menu">
+            <a href="#">Главная</a>
+
+            <div class="dropdown">
+                <button>Услуги ▾</button>
+                <div class="dropdown-content">
+                    <a href="#">Фронтенд</a>
+                    <a href="#">Бэкенд</a>
+                    <a href="#">Фул-стек</a>
+                </div>
+            </div>
+
+            <a href="#">Портфолио</a>
+            <a href="#">Контакты</a>
+            <a href="#">О нас</a>
+        </div>
+
+        <button class="btn-login">Войти</button>
+    </div>
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://i.pinimg.com/736x/72/94/f0/7294f0691c66b78dd779559e414ae9cd.jpg"
+                    class="d-block w-100" alt="paris">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Париж</h5>
+                    <p>Город красоты и вдохновения.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://i.pinimg.com/736x/14/df/1d/14df1d98e37d39ca20afbe126349e2f4.jpg"
+                    class="d-block w-100" alt="letters">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Типографика</h5>
+                    <p>Искусство красивых букв.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://i.pinimg.com/736x/dc/90/6c/dc906cda1bd748ee5fdde01794acf3a8.jpg"
+                    class="d-block w-100" alt="blue wall">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Синяя стена</h5>
+                    <p>Минимализм и спокойствие.</p>
+                </div>
             </div>
         </div>
-        <a href="#">Контакты</a>
-        <a href="#">О нас</a>
-    </nav>
-    <div class="content">
-        <h1>Добро пожаловать на наш сайт!</h1>
-        <p>Здесь могла быть ваша реклама.</p>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Предыдущий</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Следующий</span>
+        </button>
     </div>
+
+    <div class="content">
+        <h1>Добро пожаловать!</h1>
+        <p>Мы создаём красивые и удобные веб-интерфейсы.</p>
+        <a href="#" class="btn-cta">Узнать больше</a>
+    </div>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Дизайн</h3>
+            <p>Современные и адаптивные макеты для любых устройств.</p>
+        </div>
+        <div class="card">
+            <h3>Скорость</h3>
+            <p>Быстрая загрузка и оптимизация под SEO.</p>
+        </div>
+        <div class="card">
+            <h3>Надёжность</h3>
+            <p>Безопасный код и стабильная работа 24/7.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 MySite. Все права защищены.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
