@@ -216,15 +216,16 @@ body {
 }
 
 footer {
-    background-color: rgb(53, 208, 255);
+    position: relative;
+    z-index: 100;
+    background-color: rgb(86, 216, 255);
+    height: 70px;
     color: white;
     text-align: center;
     padding: 20px;
     font-size: 15px;
-    bottom: 0;
-    box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px -4px 12px rgba(0, 0, 0, 0.15);
 }
-
 .page-layout {
     display: flex;
     min-height: 100vh;
@@ -233,31 +234,37 @@ footer {
 .sidebar {
     padding: 0;
     left: 0;
-    top: 0;
+    top: 70px;
     position: sticky;
     display: flex;
     flex-direction: column;
     width: 300px;
-    height: 100vh;
-    background-color: rgb(86, 216, 255);
+    height: calc(100vh - 70px);
+    background-color: rgb(53, 208, 255);
+    box-shadow: 2px 0px 6px rgba(215, 213, 213, 0.15);
     z-index: 0;
+    border-radius: 0 2px 2px 0;
 }
 
 .sidebar-content {
     margin-top: 20px;
-    margin-left: 10px;
+    margin-left: 30px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
 }
 
 .sidebar-content a {
     text-decoration: none;
     color: white;
     font-size: 20px;
-    font
+    font-weight: bold;
 }
-
+.sidebar-content a:hover
+{
+    color: rgb(9, 173, 249);
+    transform: translateY(2px);
+}
 .main-content {
     flex: 1;
 }
