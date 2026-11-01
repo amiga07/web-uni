@@ -1,61 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Calculator</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Карточка курса</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <div class="calculator">
-        <div class="top-panel">
-        </div>
-        <div class="field">
-            <p>7</p>
-        </div>
-        <div class="keyboard">
-            <button class="grey">AC</button>
-            <button class="grey">+/-</button>
-            <button class="grey">%</button>
-            <button class="orange">÷</button>
-            <button class="black">7</button>
-            <button class="black">8</button>
-            <button class="black">9</button>
-            <button class="orange">×</button>
-            <button class="black">4</button>
-            <button class="black">5</button>
-            <button class="black">6</button>
-            <button class="orange">-</button>
-            <button class="black">1</button>
-            <button class="black">2</button>
-            <button class="black">3</button>
-            <button class="orange">+</button>
-            <button class="black" id="zero">0</button>
-            <button class="black">,</button>
-            <button class="orange">=</button>
-        </div>
-    </div>
-    <div class="card">
-        <div class="first-row">
-            <div class="text">
-                <a href="#" class="heading">"Поколение Python": курс для начинающих
-                </a>
-                <span class="author">
-                    <a href="#" class="author">Тимур Гуев, </a>
-                    <a href="#">Поколение Python,</a><br>
-                    <a href="#">Благотворительный фонд "Айкью Опшн"</a>
-                </span>
-            </div>
-            <div class="image">
-                <img src="guev.png">
-            </div>
-        </div>
-        <div class="bottom">
 
-        </div>
+  <div class="card">
+
+    <label class="fav">
+      <input type="checkbox">
+      <span class="heart">♥</span>
+    </label>
+    <div class="info">
+      <h2 class="title">"Поколение Python": курс для начинающих</h2>
+      <p class="author">Тимур 🐍 Гуев, Поколение Python, Благотворительный фонд "Айкью Опшн"</p>
+
+      <div class="stats">
+        <span>★ 5</span>
+        <span>👤 1.6M</span>
+        <span>🕒 57 ч</span>
+      </div>
+
+      <p class="price">Бесплатно</p>
     </div>
+    <div class="picture">😊</div>
+
+  </div>
+
 </body>
-
 </html>
